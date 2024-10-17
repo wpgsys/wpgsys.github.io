@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex S | Full Stack Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Alex S | Full Stack Developer & Python Expert</title>
+    <meta name="description" content="Alex S is a full stack developer with over 10 years of experience specializing in Python, networking, and server management. Explore my portfolio and get in touch for collaborations." />
+    <meta name="keywords" content="Alex S, Full Stack Developer, Python Developer, Networking, Server Management, Portfolio, Software Engineer, Programmer" />
+    <meta name="author" content="Alex S" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://wpgsys.ca" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alex S | Full Stack Developer & Python Expert" />
+    <meta property="og:description" content="Full stack developer with 10+ years of experience in Python, networking, and server management. Check out my projects and skills." />
+    <meta property="og:image" content="https://wpgsys.ca/images/bape.png" />
+    <meta property="og:url" content="https://wpgsys.ca" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Alex S | Full Stack Developer & Python Expert" />
+    <meta name="twitter:description" content="Full stack developer with 10+ years of experience in Python, networking, and server management. Check out my projects and skills." />
+    <meta name="twitter:image" content="https://wpgsys.ca/images/bape.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alex S",
+      "url": "https://wpgsys.ca",
+      "sameAs": [
+        "https://www.linkedin.com/in/alexs",
+        "https://github.com/wpgsys"
+      ],
+      "jobTitle": "Full Stack Developer",
+      "description": "Alex S is a full stack developer with over 10 years of experience specializing in Python, networking, and server management.",
+      "image": "https://wpgsys.ca/images/bape.png"
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://wpgsys.ca/images/bape.png" type="image/png" />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -14,12 +55,17 @@
     <header class="bg-white shadow">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div>
-                    <h1 class="text-2xl font-bold">Alex S</h1>
-                    <p class="text-sm text-gray-600">Full Stack Developer</p>
+                <div class="flex items-center">
+                    <!-- Logo/Image -->
+                    <img src="https://wpgsys.ca/images/bape.png" alt="Alex S Logo" class="h-10 w-10 mr-3" />
+                    <div>
+                        <h1 class="text-2xl font-bold">Alex S</h1>
+                        <p class="text-sm text-gray-600">Full Stack Developer with 10 Years of Experience</p>
+                    </div>
                 </div>
                 <nav>
                     <a href="#about" class="text-gray-600 hover:text-gray-800 mx-2">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gray-800 mx-2">Skills</a>
                     <a href="#portfolio" class="text-gray-600 hover:text-gray-800 mx-2">Portfolio</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-800 mx-2">Contact</a>
                 </nav>
@@ -30,8 +76,9 @@
     <!-- Hero Section -->
     <section class="bg-white">
         <div class="container mx-auto px-6 py-16 text-center">
+            <img src="https://wpgsys.ca/images/bape.png" alt="Alex S" class="mx-auto mb-6 w-32 h-32 rounded-full" />
             <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
-            <p class="text-lg text-gray-700">I'm a full stack developer specializing in building exceptional digital experiences.</p>
+            <p class="text-lg text-gray-700">I'm Alex S, a seasoned full stack developer specializing in Python and adaptable to any technology stack.</p>
         </div>
     </section>
 
@@ -40,14 +87,66 @@
         <div class="container mx-auto px-6 py-16">
             <h2 class="text-3xl font-bold mb-6">About Me</h2>
             <p class="text-gray-700 leading-loose">
-                <!-- Add your bio here -->
-                Passionate developer with experience in building web applications using modern technologies.
+                With over a decade of experience in programming, I have honed my skills across various domains. I specialize in Python but am proficient in multiple languages and technologies. My expertise ranges from low-level to high-level development, and I have significant experience in networking and both Windows and Linux server management. As a quick learner, I thrive in dynamic environments and adapt swiftly to new challenges.
             </p>
+            <!-- Optional Image -->
+            <div class="mt-8 text-center">
+                <img src="https://wpgsys.ca/images/bape.png" alt="Alex S" class="inline-block w-64 h-auto" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white">
+        <div class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold mb-6">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Programming Languages</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>C/C++</li>
+                        <li>Java</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Technologies & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Full Stack Development</li>
+                        <li>Networking</li>
+                        <li>Windows & Linux Server Management</li>
+                        <li>Database Design (SQL & NoSQL)</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Frameworks & Libraries</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>Express.js</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Other Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Agile Methodologies</li>
+                        <li>Version Control (Git)</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>System Architecture</li>
+                        <li>Technical Leadership</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-white">
+    <section id="portfolio" class="bg-gray-50">
         <div class="container mx-auto px-6 py-16">
             <h2 class="text-3xl font-bold mb-6">My Projects</h2>
             <div id="repos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -57,38 +156,59 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-50">
+    <section id="contact" class="bg-white">
         <div class="container mx-auto px-6 py-16">
             <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-            <p class="text-gray-700 mb-4">Feel free to reach out for collaborations or just a friendly hello 👋</p>
-            <div class="flex items-center">
-                <a href="mailto:your.email@example.com" class="text-gray-600 hover:text-gray-800 mx-2">Email</a>
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-gray-600 hover:text-gray-800 mx-2">LinkedIn</a>
-                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="text-gray-600 hover:text-gray-800 mx-2">GitHub</a>
+            <p class="text-gray-700 mb-8">Feel free to reach out for collaborations, job opportunities, or just a friendly hello 👋</p>
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Name</label>
+                    <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <input type="email" name="_replyto" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Message</label>
+                    <textarea name="message" rows="5" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <!-- Honeypot field to prevent spam -->
+                <div style="display:none;">
+                    <input type="text" name="_gotcha" />
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send Message</button>
+            </form>
+            <!-- Contact Links -->
+            <div class="flex items-center justify-center mt-8">
+                <a href="mailto:alex.s@example.com" class="text-gray-600 hover:text-gray-800 mx-2">Email</a>
+                <a href="https://www.linkedin.com/in/alexs" target="_blank" class="text-gray-600 hover:text-gray-800 mx-2">LinkedIn</a>
+                <a href="https://github.com/wpgsys" target="_blank" class="text-gray-600 hover:text-gray-800 mx-2">GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white">
+    <footer class="bg-gray-100">
         <div class="container mx-auto px-6 py-4 text-center">
-            <p class="text-gray-600">&copy; 2023 Your Name. All rights reserved.</p>
+            <p class="text-gray-600">&copy; 2023 Alex S. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- JavaScript to Fetch GitHub Repos -->
     <script>
-        // Replace 'YOUR_GITHUB_USERNAME' with your actual GitHub username
+        // GitHub username
         const username = 'wpgsys';
         const reposContainer = document.getElementById('repos');
 
-        fetch(`https://api.github.com/users/${username}/repos`)
+        fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
             .then(response => response.json())
             .then(data => {
                 data.forEach(repo => {
                     // Create a card for each repository
                     const repoCard = document.createElement('div');
-                    repoCard.classList.add('bg-gray-100', 'p-6', 'rounded', 'shadow');
+                    repoCard.classList.add('bg-white', 'p-6', 'rounded', 'shadow');
 
                     // Repository Name
                     const repoName = document.createElement('h3');
@@ -100,6 +220,12 @@
                     repoDesc.classList.add('text-gray-700', 'mb-4');
                     repoDesc.textContent = repo.description || 'No description provided';
 
+                    // Repository Image
+                    const repoImage = document.createElement('img');
+                    repoImage.src = 'https://wpgsys.ca/images/bape.png';
+                    repoImage.alt = repo.name;
+                    repoImage.classList.add('mb-4', 'w-full', 'h-32', 'object-cover', 'rounded');
+
                     // Repository Link
                     const repoLink = document.createElement('a');
                     repoLink.classList.add('text-blue-500', 'hover:underline');
@@ -108,6 +234,7 @@
                     repoLink.textContent = 'View Repository';
 
                     // Append elements to the card
+                    repoCard.appendChild(repoImage);
                     repoCard.appendChild(repoName);
                     repoCard.appendChild(repoDesc);
                     repoCard.appendChild(repoLink);
