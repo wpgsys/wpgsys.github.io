@@ -199,7 +199,6 @@
 
     <!-- JavaScript to Fetch GitHub Repos -->
     <script>
-        // GitHub username
         const username = 'wpgsys';
         const reposContainer = document.getElementById('repos');
 
@@ -207,40 +206,27 @@
             .then(response => response.json())
             .then(data => {
                 data.forEach(repo => {
-                    // Create a card for each repository
                     const repoCard = document.createElement('div');
                     repoCard.classList.add('bg-white', 'p-6', 'rounded', 'shadow');
-
-                    // Repository Name
                     const repoName = document.createElement('h3');
                     repoName.classList.add('text-xl', 'font-bold', 'mb-2');
                     repoName.textContent = repo.name;
-
-                    // Repository Description
                     const repoDesc = document.createElement('p');
                     repoDesc.classList.add('text-gray-700', 'mb-4');
                     repoDesc.textContent = repo.description || 'No description provided';
-
-                    // Repository Image
                     const repoImage = document.createElement('img');
                     repoImage.src = 'https://wpgsys.ca/images/bape.png';
                     repoImage.alt = repo.name;
                     repoImage.classList.add('mb-4', 'w-full', 'h-32', 'object-cover', 'rounded');
-
-                    // Repository Link
                     const repoLink = document.createElement('a');
                     repoLink.classList.add('text-blue-500', 'hover:underline');
                     repoLink.href = repo.html_url;
                     repoLink.target = '_blank';
                     repoLink.textContent = 'View Repository';
-
-                    // Append elements to the card
                     repoCard.appendChild(repoImage);
                     repoCard.appendChild(repoName);
                     repoCard.appendChild(repoDesc);
                     repoCard.appendChild(repoLink);
-
-                    // Append the card to the container
                     reposContainer.appendChild(repoCard);
                 });
             })
